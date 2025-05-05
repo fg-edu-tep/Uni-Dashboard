@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uni Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+
+    <!-- LEFT PANEL: TASKS -->
+    <div id="tasks-panel">
+      <h1>Tasks:</h1>
+      <button id="toggle-range">Next Week Only</button>
+      <div id="tasks-list"></div>
+    </div>
+
+    <!-- CENTER PANEL: GOOGLE SEARCH -->
+    <div id="center-panel">
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+           alt="Google logo">
+      <form id="search-form" action="https://www.google.com/search" method="GET" target="_blank">
+        <input name="q" type="search" placeholder="Search Google or type a URL" autofocus>
+        <div class="buttons">
+          <button type="submit">Google Search</button>
+          <button type="button" id="lucky">I'm Feeling Lucky</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- RIGHT PANEL: STATS & CLOCK -->
+    <div id="stats-panel">
+      <h1>Stats</h1>
+
+      <div class="stat">
+        <p>Time spent this week:</p>
+        <div class="gauge" id="spent-gauge">
+          <svg viewBox="0 0 100 50">
+            <path class="gauge-bg" d="M10,50 A40,40 0 0,1 90,50" />
+            <path class="gauge-fill" d="" />
+          </svg>
+          <div class="gauge-text" id="spent-text"></div>
+        </div>
+      </div>
+
+      <div class="stat">
+        <p>Time budgeted this week:</p>
+        <div class="gauge" id="budget-gauge">
+          <svg viewBox="0 0 100 50">
+            <path class="gauge-bg" d="M10,50 A40,40 0 0,1 90,50" />
+            <path class="gauge-fill" d="" />
+          </svg>
+          <div class="gauge-text" id="budget-text"></div>
+        </div>
+      </div>
+
+      <div id="clock">
+        <div class="time"></div>
+        <div class="date"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scripts (UMD ical.js + your dashboard logic) -->
+  <script src="ical.js" defer></script>
+  <script src="dashboard.js" defer></script>
+</body>
+</html>

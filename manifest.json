@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Uni To-Do Dashboard",
+    "version": "1.0",
+    "permissions": ["storage"],
+    "chrome_url_overrides": {
+      "newtab": "dashboard.html"
+    },
+    "host_permissions": [
+      "https://bloqueneon.uniandes.edu.co/d21/le/calendar/feed/user/*"
+    ]
+  }
+  
