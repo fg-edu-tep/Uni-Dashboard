@@ -1,5 +1,5 @@
 // ─── CONFIG ────────────────────────────────────────────────────────────
-const ICS_URL  = 'https://bloqueneon.uniandes.edu.co/d2l/le/calendar/feed/user/';
+const ICS_URL  = 'https://bloqueneon.uniandes.edu.co/d2l/le/calendar/feed/user/feed.ics?token=az9cqvl6udnqrz1lba3e';
 let filterDays = 14;            // default: next 14 days
 let allTasks   = [];
 
