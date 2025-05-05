@@ -10,7 +10,7 @@ A simple Chrome new-tab extension that:
 
 ## Captura del producto final
 
-![Captura del producto final](.imgs/screenshot.png)
+![Captura del producto final](imgs/screenshot.png)
 
 ---
 
